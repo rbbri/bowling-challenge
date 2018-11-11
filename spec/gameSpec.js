@@ -14,5 +14,14 @@ describe('Game', function () {
       for (i = 0; i < 10; i++) { game.scoreFrame(1, 1) }
       expect(game.totalScore()).toEqual(20)
     })
+
+    it('can score a game with a spare', function () {
+      var game = new Game()
+      game.scoreFrame(1, 9)
+      for (i = 0; i < 9; i++) { game.scoreFrame(1, 1) }
+      expect(game.totalScore()).toEqual(29)
+    })
+
+
   })
 })
