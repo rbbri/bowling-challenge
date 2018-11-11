@@ -1,0 +1,32 @@
+{
+  "name": "bowling-challenge",
+  "version": "1.0.0",
+  "description": "bowling score calculator",
+  "main": "game.js",
+  "directories": {
+    "doc": "docs",
+    "src": "src"
+  },
+  "scripts": {
+    "test": "./node_modules/.bin/jasmine-node spec",
+    "test": "eslint --fix src/*.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/rbbri/bowling-challenge.git"
+  },
+  "author": "robin.s.johnson@gmail.com",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/rbbri/bowling-challenge/issues"
+  },
+  "homepage": "https://github.com/rbbri/bowling-challenge#readme",
+  "devDependencies": {
+    "eslint": "^5.9.0",
+    "eslint-config-standard": "^12.0.0",
+    "eslint-plugin-import": "^2.14.0",
+    "eslint-plugin-node": "^8.0.0",
+    "eslint-plugin-promise": "^4.0.1",
+    "eslint-plugin-standard": "^4.0.0"
+  }
+}
