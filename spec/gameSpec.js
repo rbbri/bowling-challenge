@@ -22,6 +22,13 @@ describe('Game', function () {
       expect(game.totalScore()).toEqual(29)
     })
 
+    it('can score a game with a strike', function () {
+      var game = new Game()
+      game.scoreFrame(10)
+      for (i = 0; i < 9; i++) { game.scoreFrame(1, 1) }
+      expect(game.totalScore()).toEqual(30)
+    })
+
 
   })
 })
